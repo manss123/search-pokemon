@@ -55,11 +55,10 @@ export default function PokemonDetail({
         <HandleEvolutions  evolutions={pokemon.evolutions} />
       </div>
     );
-  }
-
-  if (!data && !data.pokemon) {
+  }else
+  {
     notFound();
   }
 
-  return <p>No Pokémon found</p>;
+  // return <p>No Pokémon found</p>;
 }
